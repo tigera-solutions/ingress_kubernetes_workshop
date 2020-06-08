@@ -15,7 +15,8 @@ kubectl get namespaces
 ``` 
 4. Clone this repo
 ```
-git clone 
+git clone https://github.com/tigera-solutions/ingress_kubernetes_workshop.git
+```
 
 5. Create a small demo app1 and app2
 ```
