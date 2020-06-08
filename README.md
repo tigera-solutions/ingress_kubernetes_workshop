@@ -13,18 +13,21 @@ kubectl get no
 ```
 kubectl get namespaces
 ``` 
+4. Clone this repo
+```
+git clone 
 
-4. Create a small demo app1 and app2
+5. Create a small demo app1 and app2
 ```
 kubectl create ns app1
-kubectl apply -n app1 -f https://raw.githubusercontent.com/xxradar/kuberneteslearning/master/nginx-deployment.yaml
-kubectl apply -n app1 -f https://raw.githubusercontent.com/xxradar/kuberneteslearning/master/nginx-expose-clusterip.yaml
+kubectl apply -n app1 -f nginx-deployment.yaml
+kubectl apply -n app1 -f nginx-expose-clusterip.yaml
 ```
 
 ```
 kubectl create ns app2
-kubectl apply -n app2 -f https://raw.githubusercontent.com/xxradar/kuberneteslearning/master/nginx-deployment.yaml
-kubectl apply -n app2 -f https://raw.githubusercontent.com/xxradar/kuberneteslearning/master/nginx-expose-clusterip.yaml
+kubectl apply -n app2 -f nginx-deployment.yaml
+kubectl apply -n app2 -f nginx-expose-clusterip.yaml
 ```
 
 6. Test app1 and app2 
