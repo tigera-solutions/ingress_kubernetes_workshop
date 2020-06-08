@@ -157,15 +157,15 @@ kubectl apply -n app1 -f tlsapp1_ingress.yaml
 kubectl get ingress tls-example-ingress -n app1 
 ```
 
-Update you hostfile !!!!!!
+Update you hostfile !!!
 ```
 Add to /etc/hosts
 127.0.0.1 tlsapp1.dockersec.me
 ```
 
 ```
-curl -kv  -H "Host: tlsapp1.dockersec.me" https://tlsapp1.dockersec.me:$SECUREWEB  #change the portsnumber according kubectl svc -n ingress-nginx
-curl -kv  -H "Host: tlsapp1.dockersec.me" https://localhost:$SECUREWEB #change the portsnumber according kubectl svc -n ingress-nginx
+curl -kv  -H "Host: tlsapp1.dockersec.me" https://tlsapp1.dockersec.me:$SECUREWEB
+curl -kv  -H "Host: tlsapp1.dockersec.me" https://localhost:$SECUREWEB
 ```
 
 
